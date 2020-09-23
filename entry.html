@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<form method='POST' action='/search4'>
+<table>
+<p> 검색 요청을 보내기 위해 아래의 형식을 사용하세요:</p>
+<tr><td>Phrase:</td><td><input name='phrase' type='TEXT' width='60'></td></tr>
+<tr><td>Letters:</td><td><input name='letters' type='TEXT' value=' '></td></tr>
+</table>
+<p>준비되면, 아래 버튼을 누르세요:</p>
+<p><input value='누르시오' type='SUBMIT'></p>
+</form>
+
+{% endblock %}
