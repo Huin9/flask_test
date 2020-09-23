@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<p> 당신은 아래와 같이 입력했습니다 :</p>
+<table>
+<tr><td>Phrase:</td><td>{{ the_phrase }}</td></tr>
+<tr><td>Letters:</td><td>{{ the_letters }}</td></tr>
+</table>
+
+<p> "{{ the_phrase }}"이라는 문장 안에 "{{ the_letters }}"이라는 문자를 검색해보면, 
+다음과 같은 문자를 찾을 수 있었습니다 :</p>
+<h3>{{ the_results }}</h3>
+
+{% endblock %}
